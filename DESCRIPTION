@@ -1,0 +1,22 @@
+Package: ctisglobal
+Type: Package
+Title: COVID-19 Trends and Impact Survey Global Opendata API R Interface
+Version: 0.1.0
+Author: Abhinav M
+Maintainer: Abhinav M <amotheram@ncaer.org>
+Description: Provides an interface to the Global COVID-19 Trends and Impact Survey Microdata and Opendata API.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    dplyr,
+    janitor,
+    lubridate,
+    stringr,
+    rvest,
+    httr,
+    purrr,
+    jsonlite,
+    glue,
+    rlang
+RoxygenNote: 7.1.2
