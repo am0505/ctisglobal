@@ -3,10 +3,9 @@
 
 # ctisglobal
 
-<!-- badges: start -->
-<!-- badges: end -->
-
-The goal of ctisglobal is to …
+This package offers a set of utility functions to fetch data and
+documentation from Global COVID-19 Trends and Impact Survey (CTIS) using
+R. CTIS was formerly known as COVID-19 Symptoms Survey (CSS).
 
 ## Installation
 
@@ -24,12 +23,12 @@ Load the package
 
 ``` r
 library(ctisglobal)
-## basic example code
 ```
 
-Fetch all the available indicators for CTIS opendata and their
-corresponding description and ranges of dates for which the question is
-asked in the survey.
+Fetch all the available indicators for CTIS opendata, their
+corresponding description, survey questions used in constructing the
+indicator and ranges of dates for which the question is asked in the
+survey.
 
 ``` r
 ctis_documentation <- ctis_get_public_apidoc()
