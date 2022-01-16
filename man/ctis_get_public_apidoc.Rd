@@ -13,3 +13,6 @@ A tibble with CTIS API Indicators Documentation.
 Extracts API Documentation about CTIS Public API from from UMD's
 [COVID-19 World Survey Open Data API](https://covidmap.umd.edu/api.html)
 }
+\examples{
+ctis_documentation <- ctis_get_public_apidoc()
+}

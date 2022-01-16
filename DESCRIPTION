@@ -18,7 +18,11 @@ Imports:
     purrr,
     jsonlite,
     glue,
-    rlang
+    rlang,
+    curl,
+    crayon,
+    vroom,
+    tidyselect
 RoxygenNote: 7.1.2
 URL: https://github.com/am0505/ctisglobal
 BugReports: https://github.com/am0505/ctisglobal/issues

@@ -13,3 +13,6 @@ A tibble with CTIS Country-Region pairs.
 Provides CTIS Country Regions from UMD's
 [COVID-19 World Survey Open Data API](https://covidmap.umd.edu/api.html)
 }
+\examples{
+ctis_regions <- ctis_get_public_regions()
+}

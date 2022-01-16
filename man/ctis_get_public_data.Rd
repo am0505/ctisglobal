@@ -36,3 +36,6 @@ Provides Global COVID-19 Trends and Impact Survey's data for the
 indicator, country, date and type specified from the  UMD's
 [COVID-19 World Survey Open Data API](https://covidmap.umd.edu/api.html).
 }
+\examples{
+ctis_public <- ctis_get_public_data()
+}
