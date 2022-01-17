@@ -102,6 +102,7 @@ ctis_get_public_data <- function(indicator = "covid_vaccine",
 
   }
   else {
+
     ctis_aggregate <- ctis_aggregate_parsed %>%
       data.frame() %>%
       as_tibble() %>%
@@ -109,18 +110,23 @@ ctis_get_public_data <- function(indicator = "covid_vaccine",
       mutate(date = ymd(.data$data_survey_date)) %>%
       select(-.data$status) %>%
       select(.data$date, .data$data_country, everything()) %>%
-      mutate(indicator = indicator)
+      mutate(indicator = indicator) %>%
+      rename("wt_pct" = 3,
+             "wt_pct_se" = 4,
+             "uwt_pct" = 5,
+             "uwt_pct_se" = 6,
+             "sample_size" = 7)
+
     if (is.na(region)) {
+
       ctis_aggregate <- ctis_aggregate %>%
         mutate(region = "All Regions")
+
     }
 
-    # names(ctis_aggregate) <- str_remove(names(ctis_aggregate),
-    #                                     "data_")
+    names(ctis_aggregate) <- str_remove(names(ctis_aggregate),
+                                         "data_")
 
-    ctis_public_column_names <- c("date", "country", "wt_pct", "wt_pct_se", "uwt_pct", "uwt_pct_se", "sample_size", "iso_code", "gid_0", "survey_date", "indicator", "region")
-
-    names(ctis_aggregate) <- ctis_public_column_names
 
   }
 
