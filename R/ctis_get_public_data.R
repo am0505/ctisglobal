@@ -115,8 +115,13 @@ ctis_get_public_data <- function(indicator = "covid_vaccine",
         mutate(region = "All Regions")
     }
 
-    names(ctis_aggregate) <- str_remove(names(ctis_aggregate),
-                                        "data_")
+    # names(ctis_aggregate) <- str_remove(names(ctis_aggregate),
+    #                                     "data_")
+
+    ctis_public_column_names <- c("date", "country", "wt_pct", "wt_pct_se", "uwt_pct", "uwt_pct_se", "sample_size", "iso_code", "gid_0", "survey_date", "indicator", "region")
+
+    names(ctis_aggregate) <- ctis_public_column_names
+
   }
 
   return(ctis_aggregate)
