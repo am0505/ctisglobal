@@ -3,6 +3,10 @@
 
 # ctisglobal
 
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/am0505/ctisglobal/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/am0505/ctisglobal/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
 This package offers a set of utility functions to fetch data and
 documentation from Global COVID-19 Trends and Impact Survey (CTIS) using
 R. CTIS was formerly known as COVID-19 Symptoms Survey (CSS).
@@ -49,4 +53,5 @@ ctis_public <- ctis_get_public_data(indicator = "covid_vaccine",
                                     region = NA,
                                     date_start = "2020-04-23",
                                     date_end = "2021-12-31")
+#> https://covidmap.umd.edu/api/resources?indicator=covid_vaccine&type=daily&country=India&daterange=20200423-20211231
 ```

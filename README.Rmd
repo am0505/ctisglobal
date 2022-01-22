@@ -15,6 +15,10 @@ knitr::opts_chunk$set(
 
 # ctisglobal
 
+  <!-- badges: start -->
+  [![R-CMD-check](https://github.com/am0505/ctisglobal/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/am0505/ctisglobal/actions/workflows/R-CMD-check.yaml)
+  <!-- badges: end -->
+  
 This package offers a set of utility functions to fetch data and documentation from Global COVID-19 Trends and Impact Survey (CTIS) using R. CTIS was formerly known as COVID-19 Symptoms Survey (CSS).
 
 ## Installation
